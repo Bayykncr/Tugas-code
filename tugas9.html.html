@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santika Indonesia Hotels & Resorts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #f4f4f4;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: red;
+            font-weight: bold;
+        }
+        .content {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        .hotel-image {
+            text-align: center;
+        }
+        .hotel-image img {
+            max-width: 100%;
+            height: auto;
+        }
+        .contact-form {
+            margin-top: 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+        .contact-form label, .contact-form input, .contact-form select {
+            display: block;
+            margin: 10px 0;
+        }
+        .contact-form input[type="text"], .contact-form input[type="email"], .contact-form select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 20px;
+            border: 1px solid #ccc;
+        }
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Santika Indonesia Hotels & Resorts</h1>
+</header>
+
+<nav>
+    <a href="#">HOME</a> |
+    <a href="#">CONTACT</a>
+</nav>
+
+<div class="content">
+    <div class="hotel-image">
+        <img src="hotel_image.jpg" alt="Santika Indonesia Hotels & Resorts">
+    </div>
+    
+    <p><strong>Santika Indonesia Hotels & Resorts</strong> adalah salah satu grup hotel di Indonesia dan dikelola oleh PT. Grahawita Santika...</p>
+    
+    <ul>
+        <li>The Royal Collection</li>
+        <li>Hotel Santika Premiere</li>
+        <li>Hotel Santika</li>
+        <li>Amaris Hotel</li>
+    </ul>
+
+    <div class="contact-form">
+        <h2>Hubungi Kami</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Nama Lengkap</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="address">Alamat</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">No. Telp</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="agama">Agama</label>
+            <select id="agama" name="agama">
+                <option value="Islam">Islam</option>
+                <option value="Kristen">Kristen</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Budha">Budha</option>
+            </select>
+
+            <label>Hobi</label>
+            <input type="checkbox" name="hobi" value="Sepak Bola"> Sepak Bola
+            <input type="checkbox" name="hobi" value="Badminton"> Badminton
+            <input type="checkbox" name="hobi" value="Renang"> Renang
+            <input type="checkbox" name="hobi" value="Joging"> Joging
+
+            <label>Jenis Kelamin</label>
+            <input type="radio" name="gender" value="Laki-laki" required> Laki-laki
+            <input type="radio" name="gender" value="Perempuan" required> Perempuan
+
+            <button type="submit">Kirim</button>
+        </form>
+    </div>
+</div>
+
+<footer class="footer">
+    <p>Desain by nama siswa</p>
+</footer>
+
+</body>
+</html>
