@@ -1,24 +1,27 @@
-body{
-    font-family:Arial;
+body {
+  background-color: black;
+  color: red;
 }
-h1,h2{
-    color:blue;
+.header {
+  text-align: center;
 }
-ul li a{
-    color:brown;
+.navigasi {
+  text-align: center;
 }
-ol li a{
-    color:green;
+.main {
+  text-align: center;
 }
-#p1{
-    color:black
+.main p {
+  color: red;
+  font-size: 16px;
 }
-.p2{
-    color:blueviolet;
+div {
+  display: block;
 }
-.cetak{
-    font-weight:bold;
+span {
+  display: inline;
+  color: brown;
 }
-p.cetak{
-    font-size:30px;
+.copyright {
+  text-align: right;
 }
